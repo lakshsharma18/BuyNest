@@ -4,7 +4,7 @@ import axios from "axios";
 const PayButton = ({ cartItems }) => {
   const handleCheckout = () => {
 
-    axios.post("http://localhost:3000/Stripe/create-checkout-session", { cartItems })
+    axios.post("https://backend-bwfh.onrender.com/Stripe/create-checkout-session", { cartItems })
     // axios.post("https://buynest-ecommerce-backend-27.onrender.com/Stripe/create-checkout-session", { cartItems })
       .then((res) => {
         if (res.data?.url) {

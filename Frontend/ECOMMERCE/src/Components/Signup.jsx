@@ -31,7 +31,7 @@ const Signup = () => {
 
 
         try {
-            const res = await axios.post("http://localhost:3000/User/signup", userInfo);
+            const res = await axios.post("https://backend-bwfh.onrender.com/User/signup", userInfo);
             // const res = await axios.post("https://buynest-ecommerce-backend-27.onrender.com/User/signup", userInfo);
             console.log(res.data);
             if (res.data) {
